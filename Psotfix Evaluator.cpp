@@ -93,10 +93,10 @@ int evaluatePostfix(string exp)
 	{ 
 		// If the scanned character is an operand (number here), 
 		// push it to the stack. 
-		if (isdigit(exp[i])){
-			cout<<exp[i]<<endl;
-			st.push(exp[i] ); 
-	}
+		if (isdigit(exp[i]))
+		{
+			st.push(exp[i] - '0'); 
+	    }
 
 		// If the scanned character is an operator, pop two 
 		// elements from stack apply the operator 
